@@ -1,0 +1,131 @@
+section.bloglist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+  max-width: 100vw;
+  padding: 75px 6.94%;
+}
+
+.blog {
+  position: relative;
+  justify-self: stretch;
+  padding-bottom: 62px;
+}
+
+.blog:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  position: relative;
+  gap: 60px;
+  justify-self: auto;
+}
+
+.blog:nth-child(1) .blog__image {
+  border-radius: 0;
+  aspect-ratio: auto;
+  max-width: 50%;
+  height: auto;
+}
+
+.blog:nth-child(1) .blog__writer {
+  position: static;
+  bottom: none;
+  left: none;
+  right: none;
+}
+
+.blog__image {
+  aspect-ratio: 1 / 1;
+  border-radius: 45px;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  margin-bottom: 40px;
+}
+
+.blog__body {
+  width: 100%;
+}
+
+.profile__writer {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+}
+
+.blog--title {
+  font-size: 23px;
+  letter-spacing: 1%;
+  margin-bottom: 24px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.blog--title:hover {
+  color: var(--accent);
+}
+
+.blog--desc {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 33px;
+  letter-spacing: 1%;
+  color: var(--font);
+  margin-bottom: 20px;
+}
+
+.blog__writer {
+  display: flex;
+  gap: 16px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.blog__writer--side {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.blog__writer--side .name {
+  font-size: 18px;
+  letter-spacing: 1%;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.blog__writer--side .date {
+  display: block;
+  font-size: 14px;
+  color: var(--font);
+  letter-spacing: 1%;
+}
+
+@media screen and (max-width: 678px) {
+  section.bloglist {
+    display: grid;
+    /* flex-wrap: wrap; */
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+  }
+
+  
+.blog:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  gap: 24px;
+}
+}
+
+
+@media screen and (max-width: 320px) {
+  .blog:nth-child(1) {
+    gap: 16px;
+  }
+}

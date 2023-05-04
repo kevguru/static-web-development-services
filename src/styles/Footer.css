@@ -1,0 +1,96 @@
+
+.footer__body {
+  padding: 87px 6.94% 52px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 24px;
+  color: #515151;
+  gap: 24px;
+  border-bottom: 0.8px solid #D2D2D2;
+}
+
+.footer__desc {
+  flex: 1;
+  align-self: center;
+}
+
+.footer__desc p {
+  margin-bottom: 24px;
+}
+
+.footer__desc p:last-child {
+  margin-bottom: 0;
+}
+
+.footer__aboutus {
+  flex: 1;
+  align-content: center;
+}
+
+.footer__contactus {
+  flex: 1;
+}
+
+.footer__social {
+  flex: 1;
+  align-self: flex-end;
+}
+
+h3.aboutus--title, h3.contactus--title {
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.contactus--desc p {
+  margin-bottom: 24px;
+}
+
+.contactcus--desc p:last-child {
+  margin-bottom: 0;
+}
+
+.footer__social {
+  display: flex;
+  align-items: end; 
+  gap: 16px
+}
+
+.social--button {
+  display: block;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, .15);
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.social--button:hover {
+  background-color: #515151;
+}
+
+.social--button:hover .social--icon {
+  color: #FFFFFF;
+}
+
+.social--icon {
+  width: 12px;
+}
+
+.credits {
+  padding: 29px 0 27px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #515151;
+  text-align: center;
+}
+
+@media screen and (max-width: 678px) {
+  .footer__body {
+    flex-wrap: wrap;
+  }
+}

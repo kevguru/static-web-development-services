@@ -1,0 +1,154 @@
+header#header {
+  position: relative;
+  background-color: #ffffff;
+  padding: 32px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.7px solid #c4c4c4;
+}
+
+.logo h1 a {
+  font-size: 29px;
+  line-height: 43px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.logo h1 a:active {
+  color: var(--accent);
+}
+
+.logo h1 a:visited {
+  color: var(--accent);
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+ul.menu {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+ul.menu li a {
+  color: #333;
+}
+ul.menu li a:hover {
+  font-weight: 700;
+}
+
+ul.menu li a.active {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.btn__contact {
+  background-color: var(--accent);
+  align-items: center;
+  padding: 8px 26px;
+  font-size: 13px;
+  line-height: 19px;
+  color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn__contact:hover {
+  background-color: var(--accent-hover);
+}
+
+.btn__navbar {
+  display: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn__navbar svg {
+  width: 32px;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.fixed {
+  position: fixed !important;
+  background-color: rgba(255, 255, 255, .8) !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 111;
+}
+
+@media screen and (max-width: 678px) {
+  .navbar {
+    display: none;
+  }
+
+  .btn__navbar {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 48px 32px;
+    top: 148px;
+    right: 6.94%;
+    flex-direction: column;
+    border-radius: 18px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    gap: 24px;
+    opacity: 0;
+    /* transition: opacity 5s ease-in-out; */
+  }
+
+  .navbar.show {
+    animation: navbarShow 0.5s linear forwards;
+  }
+
+  ul.menu {
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 32px;
+    height: 320px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .navbar {
+    height: calc(100vh - 148px);
+  }
+}
+
+@keyframes navbarShow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
