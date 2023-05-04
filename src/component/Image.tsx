@@ -66,7 +66,6 @@ const LazyImage = ({ src, alt, className = '' }: imageType) => {
 
   console.log(isLoading);
 
-  
   const onloadHandler: ReactEventHandler<HTMLImageElement> = () => {
     setIsLoading(false);
   };
@@ -75,7 +74,7 @@ const LazyImage = ({ src, alt, className = '' }: imageType) => {
     <>
       {isLoading && (
         <div className={`loading-image ${className}`} ref={loadRef}>
-          This is Image
+          Loading image...
         </div>
       )}
       <img ref={imgRef} src={isVisible ? src : ''} alt={alt} className={`lazy-image ${className} ${isVisible ? 'loaded' : ''}`} onLoad={onloadHandler} onError={() => setIsLoading(false)} />

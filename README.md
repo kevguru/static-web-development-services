@@ -1,5 +1,5 @@
 
-# Website Web Development Service
+# Static Website Web Development Service
 
 This repository contains the source code for a website that introduces a company specializing in web development and mobile application. The website consists of five pages, including Home, About, Service, Blog, and Contact.
 
@@ -11,7 +11,7 @@ Before running the website, ensure that you have Node.js and npm installed on yo
 1. Clone the repository to your local machine:
 
 ```bash
-    git clone https://github.com/abunyamin/website-web-development-services.git
+    git clone https://github.com/abunyamin/static-web-development-services.git
 ```
 
 2. Change into the project directory:

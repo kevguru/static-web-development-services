@@ -8,6 +8,7 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
+import NotFound from './pages/NotFound';
 
 // AOS Animation
 import AOS from 'aos';
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Home />,
+    errorElement: <NotFound />,
   },
   {
     path: '/about',

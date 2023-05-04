@@ -1,0 +1,28 @@
+section.page-404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  padding: 75px 6.94%;
+}
+
+img.image-404 {
+  max-width: 567px;
+}
+
+h2.page-404--title {
+  display: block;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 32px;
+  color: var(--accent);
+}
+
+span.page-404--desc {
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--font);
+  text-align: center;
+}
