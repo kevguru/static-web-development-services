@@ -1,11 +1,11 @@
-
 # Static Website Web Development Service
 
-This repository contains the source code for a website that introduces a company specializing in web development and mobile application. The website consists of five pages, including Home, About, Service, Blog, and Contact.
+This repository contains the source code for a website that introduces a company specializing in web development and mobile application. The website consists of five pages, including Home, About, Service, Blog, Contact and Error Page.
 
 ## Prerequisites
 
 Before running the website, ensure that you have Node.js and npm installed on your machine.
+
 ## Installation
 
 1. Clone the repository to your local machine:
@@ -25,6 +25,7 @@ Before running the website, ensure that you have Node.js and npm installed on yo
 ```bash
     npm install
 ```
+
 ## Usage
 
 To start the development server, run the following command:
@@ -44,6 +45,7 @@ To preview the built project, run the following command:
 ```bash
     npm run preview
 ```
+
 ## Dependencies
 
 - **aos** - library for animating elements on scroll
@@ -62,6 +64,12 @@ To preview the built project, run the following command:
 - **@vitejs/plugin-react** - Vite plugin for using React in a Vite project
 - **typescript** - TypeScript compiler
 - **vite** - build tool for modern web applications
+
+## Preview
+
+- 💻 [Desktop](https://github.com/abunyamin/static-web-developepment-services/blob/master/SCREENSHOT-DESKTOP.md)
+- 📱 [Mobile](https://github.com/abunyamin/static-web-developepment-services/blob/master/SCREENSHOT-MOBILE.md)
+
 ## Authors
 
 - [@abunyamin](https://www.github.com/abunyamin)
@@ -71,7 +79,6 @@ To preview the built project, run the following command:
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://abunyamin.my.id)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abunyamin)
 [![twitter](https://img.shields.io/badge/instagram-FD1D1D?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/abun_yamin)
-
 
 ## License
 
