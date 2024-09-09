@@ -11,7 +11,7 @@ const Hero = () => {
           Expert <span>Web Development Services</span> for Stunning Websites, Landing Pages, and Mobile Apps
           </h2>
           <span>
-          YaminDev - Create amazing websites, landing pages, and mobile applications with our professional web development services using ReactJS, Tailwind, and MERN stack technologies.
+          Kev Guru Media - We create amazing websites, landing pages, and mobile applications with our professional web development services using the latest technologies.
           </span>
           <div className="hero__buttons">
             <button className="btn__contact">Contact us</button>

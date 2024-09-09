@@ -25,25 +25,31 @@ const Header = () => {
   };
 
   useEffect(() => {
-    () => console.log(navbarRef);
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        headerRef.current?.classList.add('fixed');
+      } else {
+        headerRef.current?.classList.remove('fixed');
+      }
+    };
 
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 200) {
-          headerRef.current?.classList.add('fixed');
-        } else {
-          headerRef.current?.classList.remove('fixed');
-        }
-      });
+    window.addEventListener('scroll', handleScroll);
 
-    window.removeEventListener('scroll', () => {});
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   return (
     <header id="header" ref={headerRef}>
       <div className="logo">
-        <h1>
-          <NavLink to="/">YaminDev</NavLink>
-        </h1>
+        <NavLink to="/">
+          <img 
+            src="/kevgurulogowhite-modified.png" 
+            alt="KevGuru Logo" 
+            style={{ height: '40px' }} 
+          />
+        </NavLink>
       </div>
       <div className="navbar" ref={navbarRef}>
         <ul className="menu">
